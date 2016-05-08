@@ -82,7 +82,7 @@ class TriosComms
             
             print(self._errorMessage)
             
-            var first:Bool = true
+            //var first:Bool = true
             if success
             {
                while true
@@ -99,21 +99,59 @@ class TriosComms
                      {
                         print(str)
                         
-                        if first
+                        guard let json = JSON(string: str) else
                         {
-                           first = false
                            continue
                         }
                         
-                        let json = JSON(string: str)
-                        if let signals = json!["Signals"]
+                        if let instrument = json["Instrument"]
                         {
-                           if self._delegate != nil
-                           {
-                              self._delegate.signals(signals)
-                           }
-                           
+                           self._instrument = instrument
+                           self._delegate.instrumentInformation(instrument)
                         }
+                        
+//                        if first
+//                        {
+//                           first = false
+//                           continue
+//                        }
+                        
+                        guard let signals = json["Signals"] else
+                        {
+                           continue
+                        }
+                        
+                        if self._delegate != nil
+                        {
+                           self._delegate.signals(signals)
+                        }
+                        
+//                        if json == nil
+//                        {
+//                           continue
+//                        }
+                        
+//                        if let instrument = json!["Instrument"]
+//                        {
+//                           self._instrument = instrument
+//                           
+//                           print(instrument["InstrumentTypeName"])
+//                        }
+//
+//                        if first
+//                        {
+//                           first = false
+//                           continue
+//                        }
+//                        
+//                        if let signals = json!["Signals"]
+//                        {
+//                           if self._delegate != nil
+//                           {
+//                              self._delegate.signals(signals)
+//                           }
+//                           
+//                        }
                      }
                   }
                   

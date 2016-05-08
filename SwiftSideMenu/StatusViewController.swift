@@ -26,24 +26,34 @@ class StatusViewController: UIViewController, TriosDelegate
 
    func instrumentInformation(instrumentInformation:JSON)
    {
-   }
-   
-   func signals(signalsJSON:JSON)
-   {
-      print("signals:statusviewcontroller")
+      print("instrumentinformation:statusviewcontroller")
       
-      let temperature = signalsJSON["Temperature"]?.string
+      guard let name = instrumentInformation["Name"]?.string else
+      {
+         return
+      }
       
       //_instrumentNameLabel.text = temperature
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
-         self._instrumentNameLabel.text = temperature
-      })
+         self._instrumentNameLabel.text = name
+      })}
+   
+   func signals(signalsJSON:JSON)
+   {
+
    }
    
    override func viewWillAppear(animated: Bool)
    {
       (tabBarController as! TabBarController).trios._delegate = self
+      
+      let trios:TriosComms = (tabBarController as! TabBarController).trios
+      
+      _instrumentNameLabel.text = trios.instrument["Name"]?.string
+      _serialNumberLabel.text = trios.instrument["SerialNumber"]?.string
+      _runStateLabel.text = trios.instrument["RunState"]?.string
+      _instrumentType.text = trios.instrument["InstrumentTypeName"]?.string
    }
    
    override func didReceiveMemoryWarning()
