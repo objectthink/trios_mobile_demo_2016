@@ -10,6 +10,12 @@
 		012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */; };
 		012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */; };
 		012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */; };
+		017535871CDF75900094D100 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0175357E1CDF75900094D100 /* BEMAverageLine.m */; };
+		017535881CDF75900094D100 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535801CDF75900094D100 /* BEMCircle.m */; };
+		017535891CDF75900094D100 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535821CDF75900094D100 /* BEMLine.m */; };
+		0175358A1CDF75900094D100 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535841CDF75900094D100 /* BEMPermanentPopupView.m */; };
+		0175358B1CDF75900094D100 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */; };
+		0175358D1CDF767D0094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175358C1CDF767D0094D100 /* PlotViewController.swift */; };
 		01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */; };
 		01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A01CDADC6800AAA5D8 /* JSON.swift */; };
 		01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */; };
@@ -48,6 +54,17 @@
 		012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosComms.swift; sourceTree = "<group>"; };
 		012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosDelegate.swift; sourceTree = "<group>"; };
 		012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsTableViewController.swift; sourceTree = "<group>"; };
+		0175357D1CDF75900094D100 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		0175357E1CDF75900094D100 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		0175357F1CDF75900094D100 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		017535801CDF75900094D100 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		017535811CDF75900094D100 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		017535821CDF75900094D100 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		017535831CDF75900094D100 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		017535841CDF75900094D100 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		017535851CDF75900094D100 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		0175358C1CDF767D0094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
 		01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSideMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		01F021A01CDADC6800AAA5D8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -104,6 +121,23 @@
 			name = Communications;
 			sourceTree = "<group>";
 		};
+		0175357C1CDF756F0094D100 /* BEMSimpleLineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				0175357D1CDF75900094D100 /* BEMAverageLine.h */,
+				0175357E1CDF75900094D100 /* BEMAverageLine.m */,
+				0175357F1CDF75900094D100 /* BEMCircle.h */,
+				017535801CDF75900094D100 /* BEMCircle.m */,
+				017535811CDF75900094D100 /* BEMLine.h */,
+				017535821CDF75900094D100 /* BEMLine.m */,
+				017535831CDF75900094D100 /* BEMPermanentPopupView.h */,
+				017535841CDF75900094D100 /* BEMPermanentPopupView.m */,
+				017535851CDF75900094D100 /* BEMSimpleLineGraphView.h */,
+				017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */,
+			);
+			name = BEMSimpleLineGraph;
+			sourceTree = "<group>";
+		};
 		1429137B19D979A50025188A /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +156,7 @@
 				01F021B21CDAE01000AAA5D8 /* TabBarController.swift */,
 				01F021B61CDE1F9D00AAA5D8 /* MainViewController.swift */,
 				012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */,
+				0175358C1CDF767D0094D100 /* PlotViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +164,7 @@
 		14EAB63A19DD4E95006A90FC /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				0175357C1CDF756F0094D100 /* BEMSimpleLineGraph */,
 				01F021A01CDADC6800AAA5D8 /* JSON.swift */,
 				01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */,
 				01F021A21CDADC6800AAA5D8 /* JSONEncodable.swift */,
@@ -311,23 +347,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				01F021AD1CDADC6800AAA5D8 /* ysocket.swift in Sources */,
+				017535871CDF75900094D100 /* BEMAverageLine.m in Sources */,
 				012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */,
 				01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */,
+				017535881CDF75900094D100 /* BEMCircle.m in Sources */,
 				01F021AC1CDADC6800AAA5D8 /* JSONExtensions.swift in Sources */,
 				01F021B31CDAE01000AAA5D8 /* TabBarController.swift in Sources */,
 				01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */,
 				14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */,
 				01F021AE1CDADC6800AAA5D8 /* ytcpsocket.c in Sources */,
 				01F021B71CDE1F9D00AAA5D8 /* MainViewController.swift in Sources */,
+				017535891CDF75900094D100 /* BEMLine.m in Sources */,
 				01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */,
+				0175358D1CDF767D0094D100 /* PlotViewController.swift in Sources */,
 				012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */,
 				01F021B01CDADC6800AAA5D8 /* yudpsocket.c in Sources */,
+				0175358A1CDF75900094D100 /* BEMPermanentPopupView.m in Sources */,
 				1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */,
 				01F021AF1CDADC6800AAA5D8 /* ytcpsocket.swift in Sources */,
 				14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */,
 				01F021B11CDADC6800AAA5D8 /* yudpsocket.swift in Sources */,
 				012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */,
 				1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */,
+				0175358B1CDF75900094D100 /* BEMSimpleLineGraphView.m in Sources */,
 				5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */,
 				01F021AB1CDADC6800AAA5D8 /* JSONEncodable.swift in Sources */,
 			);
