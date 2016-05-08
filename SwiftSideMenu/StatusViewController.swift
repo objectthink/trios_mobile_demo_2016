@@ -14,6 +14,11 @@ class StatusViewController: UIViewController, TriosDelegate
    @IBOutlet var _serialNumberLabel: UILabel!
    @IBOutlet var _runStateLabel: UILabel!
    @IBOutlet var _instrumentType: UILabel!
+   @IBOutlet var _isBusy: UILabel!
+   @IBOutlet var _instrumentTypeName: UILabel!
+   @IBOutlet var _canRun: UILabel!
+   @IBOutlet var _isRunning: UILabel!
+   @IBOutlet var _isOnline: UILabel!
    
    var _client:TCPClient!
    var _success:Bool!
@@ -54,6 +59,13 @@ class StatusViewController: UIViewController, TriosDelegate
       _serialNumberLabel.text = trios.instrument["SerialNumber"]?.string
       _runStateLabel.text = trios.instrument["RunState"]?.string
       _instrumentType.text = trios.instrument["InstrumentTypeName"]?.string
+      
+      _instrumentTypeName.text = trios.instrument["InstrumentTypeName"]?.string
+      _isBusy.text = trios.instrument["IsBusy"]?.string
+      _isRunning.text = trios.instrument["IsRunning"]?.string
+      _isOnline.text = trios.instrument["IsOnline"]?.string
+      _canRun.text = trios.instrument["CanRun"]?.string
+      
    }
    
    override func didReceiveMemoryWarning()

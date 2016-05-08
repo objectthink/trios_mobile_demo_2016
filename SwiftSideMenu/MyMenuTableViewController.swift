@@ -141,11 +141,10 @@ class MyMenuTableViewController: UITableViewController
       else
       {
          let alert = UIAlertController(
-            title: "TA Instruments",
+            title: "Communications Error",
             message: trios._errorMessage,
             preferredStyle: .Alert)
          
-         //3. Grab the value from the text field, and print it when the user clicks OK.
          alert.addAction(
             UIAlertAction(
                title: "Ok",

@@ -107,7 +107,11 @@ class TriosComms
                         if let instrument = json["Instrument"]
                         {
                            self._instrument = instrument
-                           self._delegate.instrumentInformation(instrument)
+                           
+                           if self._delegate != nil
+                           {
+                              self._delegate.instrumentInformation(instrument)                              
+                           }
                         }
                         
 //                        if first
