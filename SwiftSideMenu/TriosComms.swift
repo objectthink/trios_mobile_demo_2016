@@ -16,6 +16,20 @@ class TriosComms
    var _errorMessage:String!
    var _success:Bool = false
    var _quit:Bool = false
+   var _instrument:JSON!
+   var _delegate:TriosDelegate!
+   
+   var delegate:TriosDelegate
+   {
+      set
+      {
+         _delegate = newValue
+      }
+      get
+      {
+         return _delegate
+      }
+   }
    
    var ipAddress:String
    {
@@ -26,6 +40,18 @@ class TriosComms
       get
       {
          return _ipAddress
+      }
+   }
+   
+   var instrument:JSON
+   {
+      set
+      {
+         _instrument = newValue
+      }
+      get
+      {
+         return _instrument
       }
    }
    
@@ -43,53 +69,22 @@ class TriosComms
       
       print(_errorMessage)
       
-      let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-      dispatch_async(queue)
+      if(_success)
       {
-         //self._client = TCPClient(addr: ipAddress, port: 50007)
+         _isConnected = true
          
-         //let (success, errmsg) = self._client.connect(timeout: 10)
-         
-         //self._errorMessage = errmsg
-         
-         if self._success
+         let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+         dispatch_async(queue)
          {
-            self._isConnected = true
-            
             let (success, errmsg) = self._client.send(str:"MobileUpdates" )
-   
+            
             self._errorMessage = errmsg
             
             print(self._errorMessage)
             
+            var first:Bool = true
             if success
             {
-//               var data = client.read(1024*10)
-//               if let d = data
-//               {
-//                  if let str = String(bytes: d, encoding: NSUTF8StringEncoding)
-//                  {
-//                     print(str)
-//                     
-//                     dispatch_async(dispatch_get_main_queue(),
-//                     { () -> Void in
-//                        let json = JSON(string: str)
-//                        let instrument = json!["Instrument"]
-//                                       
-//                        let serialNumber = instrument!["SerialNumber"]?.string
-//                        let runState = instrument!["RunState"]?.string
-//                        let name = instrument!["Name"]?.string
-//                                       
-//                        //self._serialNumberLabel.text = "Serial Number: " + serialNumber!
-//                        //self._runStateLabel.text = "Status: " + runState!
-//                        //self._instrumentNameLabel.text = "Name: " + name!
-//                        //self._instrumentType.text = "Instrument Type: " + (instrument!["InstrumentTypeName"]?.string)!
-//                                       
-//                        //client.close()
-//                     })
-//                  }
-//               }
-               
                while true
                {
                   if self._quit
@@ -103,6 +98,22 @@ class TriosComms
                      if let str = String(bytes: d, encoding: NSUTF8StringEncoding)
                      {
                         print(str)
+                        
+                        if first
+                        {
+                           first = false
+                           continue
+                        }
+                        
+                        let json = JSON(string: str)
+                        if let signals = json!["Signals"]
+                        {
+                           if self._delegate != nil
+                           {
+                              self._delegate.signals(signals)
+                           }
+                           
+                        }
                      }
                   }
                   

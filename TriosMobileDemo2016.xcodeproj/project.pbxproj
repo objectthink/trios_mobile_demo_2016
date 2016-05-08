@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */; };
+		012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */; };
+		012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */; };
 		01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */; };
 		01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A01CDADC6800AAA5D8 /* JSON.swift */; };
 		01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosComms.swift; sourceTree = "<group>"; };
+		012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosDelegate.swift; sourceTree = "<group>"; };
+		012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsTableViewController.swift; sourceTree = "<group>"; };
 		01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSideMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		01F021A01CDADC6800AAA5D8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */,
+				012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */,
 			);
 			name = Communications;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */,
 				01F021B21CDAE01000AAA5D8 /* TabBarController.swift */,
 				01F021B61CDE1F9D00AAA5D8 /* MainViewController.swift */,
+				012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -314,11 +320,13 @@
 				01F021AE1CDADC6800AAA5D8 /* ytcpsocket.c in Sources */,
 				01F021B71CDE1F9D00AAA5D8 /* MainViewController.swift in Sources */,
 				01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */,
+				012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */,
 				01F021B01CDADC6800AAA5D8 /* yudpsocket.c in Sources */,
 				1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */,
 				01F021AF1CDADC6800AAA5D8 /* ytcpsocket.swift in Sources */,
 				14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */,
 				01F021B11CDADC6800AAA5D8 /* yudpsocket.swift in Sources */,
+				012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */,
 				1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */,
 				5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */,
 				01F021AB1CDADC6800AAA5D8 /* JSONEncodable.swift in Sources */,

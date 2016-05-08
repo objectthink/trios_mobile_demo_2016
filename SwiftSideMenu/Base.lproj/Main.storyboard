@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="39" y="49"/>
         </scene>
-        <!--ViewController 2-->
+        <!--Procedure-->
         <scene sceneID="ZaE-bk-iww">
             <objects>
-                <viewController storyboardIdentifier="ViewController2" title="ViewController 2" id="gMT-kX-3ov" customClass="ViewController2" customModule="TriosMobileDemo2016" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gMT-kX-3ov" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pS4-Ko-kwh"/>
                         <viewControllerLayoutGuide type="bottom" id="hT2-oc-fas"/>
@@ -66,16 +66,16 @@
                             <constraint firstItem="coo-er-Lry" firstAttribute="centerX" secondItem="58r-My-kH9" secondAttribute="centerX" id="dAn-ck-D7D"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dunno2" image="list-simple-7" id="Pre-3e-GjY"/>
+                    <tabBarItem key="tabBarItem" title="Procedure" image="list-simple-7" id="Pre-3e-GjY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZc-WY-K2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="1370"/>
+            <point key="canvasLocation" x="1670" y="2762"/>
         </scene>
-        <!--ViewController 3-->
+        <!--Control-->
         <scene sceneID="U2O-Gc-gp6">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" title="ViewController 3" id="vmo-1u-jOC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController3" id="vmo-1u-jOC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZ1-a1-BcP"/>
                         <viewControllerLayoutGuide type="bottom" id="Pia-6A-Vjh"/>
@@ -97,12 +97,12 @@
                             <constraint firstItem="jXu-wj-PDd" firstAttribute="centerY" secondItem="EsI-cR-9So" secondAttribute="centerY" id="RRD-ZZ-LXb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dunno" image="clock-timer-7" id="WR2-mj-ZXk"/>
+                    <tabBarItem key="tabBarItem" title="Control" image="clock-timer-7" id="WR2-mj-ZXk"/>
                     <navigationItem key="navigationItem" id="Rue-8n-bD9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdQ-Jr-QE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="1381"/>
+            <point key="canvasLocation" x="1665" y="2077"/>
         </scene>
         <!--Plot-->
         <scene sceneID="On5-Dx-oe1">
@@ -133,12 +133,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lT5-0T-8h0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="728"/>
+            <point key="canvasLocation" x="1670" y="691"/>
         </scene>
-        <!--10.52.53.26-->
+        <!--Signals-->
         <scene sceneID="WkF-CU-vs3">
             <objects>
-                <viewController title="10.52.53.26" wantsFullScreenLayout="YES" id="6au-GB-I2M" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="6au-GB-I2M" customClass="SignalsViewController" customModule="TriosMobileDemo2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fi3-x5-cVc"/>
                         <viewControllerLayoutGuide type="bottom" id="5xh-RW-ZtU"/>
@@ -164,7 +164,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i3r-Sd-i74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="67"/>
+            <point key="canvasLocation" x="3100" y="526"/>
+        </scene>
+        <!--Signals-->
+        <scene sceneID="eSX-VI-90K">
+            <objects>
+                <tableViewController id="eAX-SI-KMM" customClass="SignalsTableViewController" customModule="TriosMobileDemo2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dnZ-uP-OY6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignalCell" textLabel="4gp-QZ-mR4" detailTextLabel="rH4-4M-vrG" style="IBUITableViewCellStyleValue2" id="QsF-8B-PXE">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QsF-8B-PXE" id="rIP-5m-Ndi">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4gp-QZ-mR4">
+                                            <rect key="frame" x="15" y="14" width="91" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rH4-4M-vrG">
+                                            <rect key="frame" x="112" y="14" width="33" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eAX-SI-KMM" id="OMM-r1-bK8"/>
+                            <outlet property="delegate" destination="eAX-SI-KMM" id="9Cv-xU-qQ8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Signals" image="wifi-signal-7" id="Cyq-va-B8s"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3x-Jq-zqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="-39"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BXd-e9-c7d">
@@ -177,21 +223,21 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="6au-GB-I2M" kind="relationship" relationship="viewControllers" id="ZmE-Fo-jtn"/>
-                        <segue destination="byn-hP-9Xa" kind="relationship" relationship="viewControllers" id="dnM-WB-D7Z"/>
-                        <segue destination="6Ot-12-U3u" kind="relationship" relationship="viewControllers" id="D5I-a8-x76"/>
-                        <segue destination="vmo-1u-jOC" kind="relationship" relationship="viewControllers" id="rye-9N-IEH"/>
-                        <segue destination="gMT-kX-3ov" kind="relationship" relationship="viewControllers" id="6XL-Zl-zQm"/>
+                        <segue destination="eAX-SI-KMM" kind="relationship" relationship="viewControllers" id="QSh-sE-J6I"/>
+                        <segue destination="byn-hP-9Xa" kind="relationship" relationship="viewControllers" id="052-Vz-OCe"/>
+                        <segue destination="6Ot-12-U3u" kind="relationship" relationship="viewControllers" id="AVI-ly-2PS"/>
+                        <segue destination="vmo-1u-jOC" kind="relationship" relationship="viewControllers" id="j57-BT-z5W"/>
+                        <segue destination="gMT-kX-3ov" kind="relationship" relationship="viewControllers" id="Rgp-zs-WUA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8o-y2-J9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="719" y="429"/>
         </scene>
-        <!--Item 3-->
+        <!--Status-->
         <scene sceneID="7sn-3Y-MdV">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" title="Item 3" id="6Ot-12-U3u" customClass="StatusViewController" customModule="TriosMobileDemo2016" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="6Ot-12-U3u" customClass="StatusViewController" customModule="TriosMobileDemo2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UaZ-jL-PH8"/>
                         <viewControllerLayoutGuide type="bottom" id="lz5-8o-lK3"/>
@@ -247,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzB-Yr-ZHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2149" y="1428"/>
+            <point key="canvasLocation" x="1670" y="1417"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="cvg-r3-oiY">

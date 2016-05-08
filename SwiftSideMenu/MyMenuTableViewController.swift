@@ -125,17 +125,42 @@ class MyMenuTableViewController: UITableViewController
       //Present new view controller
       let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
       var destViewController : TabBarController
-      
 
       //create comms object on ip which is cell text or in list of ip's
       let trios = TriosComms(ipAddress: ipAddresses[indexPath.row])
       
-      destViewController =
-         mainStoryboard.instantiateViewControllerWithIdentifier("TestTabBarController") as! TabBarController
-      
-      destViewController.trios = trios
-      
-      sideMenuController()?.setContentViewController(destViewController)
+      if trios._isConnected
+      {
+         destViewController =
+            mainStoryboard.instantiateViewControllerWithIdentifier("TestTabBarController") as! TabBarController
+         
+         destViewController.trios = trios
+         
+         sideMenuController()?.setContentViewController(destViewController)
+      }
+      else
+      {
+         let alert = UIAlertController(
+            title: "TA Instruments",
+            message: trios._errorMessage,
+            preferredStyle: .Alert)
+         
+         //3. Grab the value from the text field, and print it when the user clicks OK.
+         alert.addAction(
+            UIAlertAction(
+               title: "Ok",
+               style: .Default,
+               handler:
+               { (action) -> Void in
+                  self.toggleSideMenuView()
+               }))
+
+         presentViewController(alert, animated: true, completion: nil)
+         
+         selectedMenuItem = -1
+         
+         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+      }
    }
    
    
