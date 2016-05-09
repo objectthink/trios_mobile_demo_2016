@@ -32,6 +32,28 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
       
       _graph.enableYAxisLabel = true
       _graph.enableXAxisLabel = true
+      
+      _graph.enableTouchReport = true;
+      _graph.enablePopUpReport = true;
+      _graph.enableYAxisLabel = true;
+      _graph.autoScaleYAxis = true;
+      _graph.alwaysDisplayDots = false;
+      _graph.enableReferenceXAxisLines = true;
+      _graph.enableReferenceYAxisLines = true;
+      _graph.enableReferenceAxisFrame = true;
+
+      _graph.formatStringForValues = "%.4f";
+      
+      _graph.animationGraphStyle = .None
+      
+      //_graph.averageLine.enableAverageLine = true;
+      //_graph.averageLine.alpha = 0.6;
+      //_graph.averageLine.color = UIColor.grayColor()
+      //_graph.averageLine.width = 2.5;
+      
+      //_graph.averageLine.dashPattern = @[@(2),@(2)];
+      
+      _graph.backgroundColor = UIColor.whiteColor()
    }
 
    func instrumentInformation(instrumentInformation:JSON)
@@ -51,12 +73,19 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
             
             self._values.append(f)
             
+            if self._values.count > 100
+            {
+               self._values.removeAtIndex(0)  
+            }
+            
             self._tick = self._tick + 1
             
-            if self._tick % 10 == 0
-            {
-               self._graph.reloadGraph()
-            }
+            self._graph.reloadGraph()
+
+            //if self._tick % 10 == 0
+            //{
+            //   self._graph.reloadGraph()
+            //}
          }
          
       })

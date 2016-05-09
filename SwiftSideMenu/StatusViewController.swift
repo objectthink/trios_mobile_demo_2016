@@ -55,16 +55,21 @@ class StatusViewController: UIViewController, TriosDelegate
       
       let trios:TriosComms = (tabBarController as! TabBarController).trios
       
-      _instrumentNameLabel.text = trios.instrument["Name"]?.string
-      _serialNumberLabel.text = trios.instrument["SerialNumber"]?.string
-      _runStateLabel.text = trios.instrument["RunState"]?.string
-      _instrumentType.text = trios.instrument["InstrumentTypeName"]?.string
+      guard let instrument = trios._instrument else
+      {
+         return
+      }
       
-      _instrumentTypeName.text = trios.instrument["InstrumentTypeName"]?.string
-      _isBusy.text = trios.instrument["IsBusy"]?.string
-      _isRunning.text = trios.instrument["IsRunning"]?.string
-      _isOnline.text = trios.instrument["IsOnline"]?.string
-      _canRun.text = trios.instrument["CanRun"]?.string
+      _instrumentNameLabel.text = instrument["Name"]?.string
+      _serialNumberLabel.text = instrument["SerialNumber"]?.string
+      _runStateLabel.text = instrument["RunState"]?.string
+      _instrumentType.text = instrument["InstrumentTypeName"]?.string
+      
+      _instrumentTypeName.text = instrument["InstrumentTypeName"]?.string
+      _isBusy.text = instrument["IsBusy"]?.string
+      _isRunning.text = instrument["IsRunning"]?.string
+      _isOnline.text = instrument["IsOnline"]?.string
+      _canRun.text = instrument["CanRun"]?.string
       
    }
    

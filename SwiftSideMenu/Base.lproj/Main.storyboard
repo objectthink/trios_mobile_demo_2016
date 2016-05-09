@@ -117,9 +117,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-pp-JNH" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="20" y="28" width="560" height="261"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-pp-JNH" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="20" y="28" width="560" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorXaxisLabel">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="byn-hP-9Xa" id="cDh-m7-qQS"/>
                                     <outlet property="delegate" destination="byn-hP-9Xa" id="gpk-J5-sFB"/>
@@ -129,6 +135,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="1I3-pp-JNH" secondAttribute="leading" id="Cth-5J-dSu"/>
+                            <constraint firstItem="1I3-pp-JNH" firstAttribute="bottom" secondItem="rHe-yj-K7q" secondAttribute="top" id="OWD-wW-NbV"/>
+                            <constraint firstItem="1I3-pp-JNH" firstAttribute="top" secondItem="LZA-r4-MwR" secondAttribute="bottom" constant="8" symbolic="YES" id="Vz4-dB-RoN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1I3-pp-JNH" secondAttribute="trailing" id="WYF-T5-1i8"/>
                         </constraints>
                     </view>
