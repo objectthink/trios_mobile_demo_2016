@@ -118,9 +118,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-pp-JNH" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="20" y="28" width="560" height="523"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="28" width="560" height="419"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="colorXaxisLabel">
                                         <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,18 +131,32 @@
                                     <outlet property="delegate" destination="byn-hP-9Xa" id="gpk-J5-sFB"/>
                                 </connections>
                             </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVQ-AW-HAg">
+                                <rect key="frame" x="0.0" y="450" width="600" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="enp-B7-2s9"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="byn-hP-9Xa" id="Jih-2S-6Rh"/>
+                                    <outlet property="delegate" destination="byn-hP-9Xa" id="3vw-eU-cBX"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="1I3-pp-JNH" secondAttribute="leading" id="Cth-5J-dSu"/>
-                            <constraint firstItem="1I3-pp-JNH" firstAttribute="bottom" secondItem="rHe-yj-K7q" secondAttribute="top" id="OWD-wW-NbV"/>
-                            <constraint firstItem="1I3-pp-JNH" firstAttribute="top" secondItem="LZA-r4-MwR" secondAttribute="bottom" constant="8" symbolic="YES" id="Vz4-dB-RoN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1I3-pp-JNH" secondAttribute="trailing" id="WYF-T5-1i8"/>
+                            <constraint firstAttribute="trailing" secondItem="tVQ-AW-HAg" secondAttribute="trailing" id="0cP-Vp-u0t"/>
+                            <constraint firstItem="1I3-pp-JNH" firstAttribute="centerX" secondItem="tVQ-AW-HAg" secondAttribute="centerX" id="4Qv-X7-F3u"/>
+                            <constraint firstItem="1I3-pp-JNH" firstAttribute="top" secondItem="LZA-r4-MwR" secondAttribute="bottom" constant="8" symbolic="YES" id="8jk-WD-lnx"/>
+                            <constraint firstItem="rHe-yj-K7q" firstAttribute="top" secondItem="tVQ-AW-HAg" secondAttribute="bottom" constant="8" symbolic="YES" id="93Y-Tb-d3b"/>
+                            <constraint firstItem="tVQ-AW-HAg" firstAttribute="top" secondItem="1I3-pp-JNH" secondAttribute="bottom" constant="3" id="HbI-Ls-5Qm"/>
+                            <constraint firstItem="tVQ-AW-HAg" firstAttribute="leading" secondItem="0GM-E7-TmI" secondAttribute="leading" id="PhX-BK-XLj"/>
+                            <constraint firstItem="1I3-pp-JNH" firstAttribute="leading" secondItem="0GM-E7-TmI" secondAttribute="leadingMargin" id="Xhe-oc-g3P"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Plot" image="connectivity-bar-7" id="3my-FV-5VL"/>
                     <connections>
                         <outlet property="_graph" destination="1I3-pp-JNH" id="Uty-2b-mrp"/>
+                        <outlet property="_picker" destination="tVQ-AW-HAg" id="sc0-Xb-iJD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lT5-0T-8h0" userLabel="First Responder" sceneMemberID="firstResponder"/>

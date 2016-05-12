@@ -8,13 +8,22 @@
 
 import UIKit
 
-class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleLineGraphDelegate, TriosDelegate
+class PlotViewController: UIViewController,
+   BEMSimpleLineGraphDataSource,
+   BEMSimpleLineGraphDelegate,
+   UIPickerViewDelegate,
+   UIPickerViewDataSource,
+   TriosDelegate
 {
    @IBOutlet var _graph: BEMSimpleLineGraphView!
+   @IBOutlet var _picker: UIPickerView!
    
    var _point:CGFloat!
    var _tick:Int = 0
    var _values:Array<CGFloat>!
+   
+   var _key:String!
+   var _keys:Array<String>!
    
    override func viewDidLoad()
    {
@@ -54,6 +63,8 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
       //_graph.averageLine.dashPattern = @[@(2),@(2)];
       
       _graph.backgroundColor = UIColor.whiteColor()
+      
+      _key = "Temperature"
    }
 
    func instrumentInformation(instrumentInformation:JSON)
@@ -62,10 +73,22 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
    
    func signals(signals:JSON)
    {
+      if _keys == nil
+      {
+         _keys = Array<String>()
+         
+         for key in (signals.object?.keys)!
+         {
+            _keys.append(key)
+         }
+         
+         _picker.reloadAllComponents()
+      }
+      
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
          
-         if let n = NSNumberFormatter().numberFromString((signals["Temperature"]?.string)!)
+         if let n = NSNumberFormatter().numberFromString((signals[self._key]?.string)!)
          {
             let f = CGFloat(n)
 
@@ -81,11 +104,6 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
             self._tick = self._tick + 1
             
             self._graph.reloadGraph()
-
-            //if self._tick % 10 == 0
-            //{
-            //   self._graph.reloadGraph()
-            //}
          }
          
       })
@@ -124,7 +142,38 @@ class PlotViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSim
       // Dispose of any resources that can be recreated.
    }
    
+   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+   {
+      guard _keys != nil else
+      {
+         return 0
+      }
+      
+      return _keys.count
+   }
    
+   func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+   {
+      return 1
+   }
+   
+   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+   {
+      guard _keys != nil else
+      {
+         return ""
+      }
+      
+      return _keys[row]
+   }
+   
+   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+   {
+      _values.removeAll()
+      
+      _key = _keys[row]
+   }
+
    /*
     // MARK: - Navigation
     

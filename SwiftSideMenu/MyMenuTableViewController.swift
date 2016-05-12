@@ -126,9 +126,21 @@ class MyMenuTableViewController: UITableViewController
       let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
       var destViewController : TabBarController
 
+      //let ai : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 50, 50)) as UIActivityIndicatorView
+      
+      //ai.center = self.view.center
+      //ai.hidesWhenStopped = true
+      //ai.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+      
+      //view.addSubview(ai)
+      
+      //ai.startAnimating()
+      
       //create comms object on ip which is cell text or in list of ip's
       let trios = TriosComms(ipAddress: ipAddresses[indexPath.row])
       
+      //ai.stopAnimating()
+
       if trios._isConnected
       {
          destViewController =

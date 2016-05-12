@@ -15,6 +15,10 @@ class SignalsTableViewController: UITableViewController, TriosDelegate
    var _shear:String!
    var _strain:String!
    var _gap:String!
+   var _signals:JSON!
+
+   var _keys:Array<String>!
+   var _values:Array<String>!
    
    override func viewDidLoad()
    {
@@ -31,18 +35,23 @@ class SignalsTableViewController: UITableViewController, TriosDelegate
    {
    }
    
-   func signals(signalsJSON:JSON)
+   func signals(signals:JSON)
    {
       print("signals:statusviewcontroller")
       
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
          
-         self._temperature = signalsJSON["Temperature"]?.string
-         self._stress = signalsJSON["Stress"]?.string
-         self._strain = signalsJSON["Strain"]?.string
-         self._shear = signalsJSON["Shear"]?.string
-         self._gap = signalsJSON["Gap"]?.string
+         self._keys = Array<String>()
+         self._values = Array<String>()
+         
+         for key in (signals.object?.keys)!
+         {
+            self._keys.append(key)
+            self._values.append((signals[key]?.string)!)
+         }
+         
+         self._signals = signals
          
          self.tableView.reloadData()
       })
@@ -70,37 +79,21 @@ class SignalsTableViewController: UITableViewController, TriosDelegate
    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
       // #warning Incomplete implementation, return the number of rows
-      return 5
+      
+      guard _signals != nil else
+      {
+         return 0
+      }
+      
+      return (_signals.object?.keys.count)!
    }
    
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
    {
       let cell = tableView.dequeueReusableCellWithIdentifier("SignalCell", forIndexPath: indexPath)
       
-      switch indexPath.row
-      {
-      case 0:
-         cell.textLabel?.text = "Temperature"
-         cell.detailTextLabel?.text = _temperature
-         break
-      case 1:
-         cell.textLabel?.text = "Stress"
-         cell.detailTextLabel?.text = _stress
-         break
-      case 2:
-         cell.textLabel?.text = "Shear"
-         cell.detailTextLabel?.text = _shear
-         break
-      case 3:
-         cell.textLabel?.text = "Strain"
-         cell.detailTextLabel?.text = _strain
-         break
-      case 4:
-         cell.textLabel?.text = "Gap"
-         cell.detailTextLabel?.text = _gap
-      default:
-         break
-      }
+      cell.textLabel?.text = _keys[indexPath.row]
+      cell.detailTextLabel?.text = _values[indexPath.row]
       
       return cell
    }
