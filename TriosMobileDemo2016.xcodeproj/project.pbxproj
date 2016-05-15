@@ -16,6 +16,8 @@
 		0175358A1CDF75900094D100 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535841CDF75900094D100 /* BEMPermanentPopupView.m */; };
 		0175358B1CDF75900094D100 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */; };
 		0175358D1CDF767D0094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175358C1CDF767D0094D100 /* PlotViewController.swift */; };
+		017535921CE742C40094D100 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0175358F1CE742C40094D100 /* GCDAsyncSocket.m */; };
+		017535931CE742C40094D100 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */; };
 		01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */; };
 		01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A01CDADC6800AAA5D8 /* JSON.swift */; };
 		01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */; };
@@ -65,6 +67,10 @@
 		017535851CDF75900094D100 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
 		017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
 		0175358C1CDF767D0094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		0175358E1CE742C40094D100 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		0175358F1CE742C40094D100 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		017535901CE742C40094D100 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSideMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		01F021A01CDADC6800AAA5D8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -177,6 +183,10 @@
 				14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */,
 				14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */,
 				01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */,
+				0175358E1CE742C40094D100 /* GCDAsyncSocket.h */,
+				0175358F1CE742C40094D100 /* GCDAsyncSocket.m */,
+				017535901CE742C40094D100 /* GCDAsyncUdpSocket.h */,
+				017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */,
 			);
 			name = Library;
 			path = ../../Library;
@@ -350,8 +360,10 @@
 				017535871CDF75900094D100 /* BEMAverageLine.m in Sources */,
 				012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */,
 				01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */,
+				017535931CE742C40094D100 /* GCDAsyncUdpSocket.m in Sources */,
 				017535881CDF75900094D100 /* BEMCircle.m in Sources */,
 				01F021AC1CDADC6800AAA5D8 /* JSONExtensions.swift in Sources */,
+				017535921CE742C40094D100 /* GCDAsyncSocket.m in Sources */,
 				01F021B31CDAE01000AAA5D8 /* TabBarController.swift in Sources */,
 				01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */,
 				14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */,

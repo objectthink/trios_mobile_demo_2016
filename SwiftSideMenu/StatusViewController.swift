@@ -8,45 +8,58 @@
 
 import UIKit
 
-class StatusViewController: UIViewController, TriosDelegate
+class StatusViewController: UITableViewController, TriosDelegate
 {
-   @IBOutlet var _instrumentNameLabel: UILabel!
-   @IBOutlet var _serialNumberLabel: UILabel!
-   @IBOutlet var _runStateLabel: UILabel!
-   @IBOutlet var _instrumentType: UILabel!
-   @IBOutlet var _isBusy: UILabel!
-   @IBOutlet var _instrumentTypeName: UILabel!
-   @IBOutlet var _canRun: UILabel!
-   @IBOutlet var _isRunning: UILabel!
-   @IBOutlet var _isOnline: UILabel!
-   
-   var _client:TCPClient!
-   var _success:Bool!
-   var _errmsg:String!
-   
+   var _keys:Array<String>!
+   var _values:Array<String>!
+
    override func viewDidLoad()
    {
       super.viewDidLoad()
    }
 
+   override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+   {
+      return 1
+   }
+   
+   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+   {
+      if _keys != nil
+      {
+         return _keys.count
+      }
+      else
+      {
+         return 0
+      }
+   }
+   
+   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+   {
+      let cell = tableView.dequeueReusableCellWithIdentifier("StatusCell", forIndexPath: indexPath)
+      
+      cell.textLabel?.text = _keys[indexPath.row]
+      cell.detailTextLabel?.text = _values[indexPath.row]
+      
+      return cell
+   }
+   
    func instrumentInformation(instrumentInformation:JSON)
    {
       print("instrumentinformation:statusviewcontroller")
       
-      guard let name = instrumentInformation["Name"]?.string else
-      {
-         return
-      }
-      
-      //_instrumentNameLabel.text = temperature
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
-         self._instrumentNameLabel.text = name
-      })}
+      })
+   }
    
+   func experiment(experiment:JSON)
+   {
+   }
+
    func signals(signalsJSON:JSON)
    {
-
    }
    
    override func viewWillAppear(animated: Bool)
@@ -59,18 +72,23 @@ class StatusViewController: UIViewController, TriosDelegate
       {
          return
       }
-      
-      _instrumentNameLabel.text = instrument["Name"]?.string
-      _serialNumberLabel.text = instrument["SerialNumber"]?.string
-      _runStateLabel.text = instrument["RunState"]?.string
-      _instrumentType.text = instrument["InstrumentTypeName"]?.string
-      
-      _instrumentTypeName.text = instrument["InstrumentTypeName"]?.string
-      _isBusy.text = instrument["IsBusy"]?.string
-      _isRunning.text = instrument["IsRunning"]?.string
-      _isOnline.text = instrument["IsOnline"]?.string
-      _canRun.text = instrument["CanRun"]?.string
-      
+
+      dispatch_async(dispatch_get_main_queue(),
+      { () -> Void in
+         self._keys = Array<String>()
+         self._values = Array<String>()
+         
+         for key in (instrument.object?.keys)!
+         {
+            self._keys.append(key)
+            
+            self._values.append(
+               (instrument[key]?.string)!)
+         }
+         
+         self.tableView.reloadData()
+
+      })
    }
    
    override func didReceiveMemoryWarning()

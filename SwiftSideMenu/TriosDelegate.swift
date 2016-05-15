@@ -12,4 +12,5 @@ protocol TriosDelegate
 {
    func instrumentInformation(instrumentInformation:JSON)
    func signals(signals:JSON)
+   func experiment(experiment:JSON)
 }

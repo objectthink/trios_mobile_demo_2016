@@ -137,7 +137,7 @@ class MyMenuTableViewController: UITableViewController
       //ai.startAnimating()
       
       //create comms object on ip which is cell text or in list of ip's
-      let trios = TriosComms(ipAddress: ipAddresses[indexPath.row])
+      let trios = TriosComms(ipAddress: ipAddresses[indexPath.row], use: true)
       
       //ai.stopAnimating()
 

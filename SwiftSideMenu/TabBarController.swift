@@ -35,6 +35,12 @@ class TabBarController: UITabBarController
          style: .Plain,
          target: self,
          action: #selector(burgerTapped))
+      
+      navigationItem.rightBarButtonItem = UIBarButtonItem(
+         title: "Idle",
+         style: .Plain,
+         target: self,
+         action: nil)
    }
    
    func burgerTapped()

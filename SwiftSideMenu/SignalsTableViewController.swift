@@ -31,6 +31,10 @@ class SignalsTableViewController: UITableViewController, TriosDelegate
       // self.navigationItem.rightBarButtonItem = self.editButtonItem()
    }
    
+   func experiment(experiment:JSON)
+   {
+   }
+
    func instrumentInformation(instrumentInformation:JSON)
    {
    }
@@ -48,7 +52,9 @@ class SignalsTableViewController: UITableViewController, TriosDelegate
          for key in (signals.object?.keys)!
          {
             self._keys.append(key)
-            self._values.append((signals[key]?.string)!)
+            
+            self._values.append(
+               (signals[key]?["Value"]!.string)! + " " + (signals[key]?["Units"]!.string)!)
          }
          
          self._signals = signals

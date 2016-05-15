@@ -62,11 +62,13 @@ class PlotViewController: UIViewController,
       
       //_graph.averageLine.dashPattern = @[@(2),@(2)];
       
-      _graph.backgroundColor = UIColor.whiteColor()
-      
       _key = "Temperature"
    }
 
+   func experiment(experiment:JSON)
+   {
+   }
+   
    func instrumentInformation(instrumentInformation:JSON)
    {
    }
@@ -88,7 +90,7 @@ class PlotViewController: UIViewController,
       dispatch_async(dispatch_get_main_queue(),
       { () -> Void in
          
-         if let n = NSNumberFormatter().numberFromString((signals[self._key]?.string)!)
+         if let n = NSNumberFormatter().numberFromString((signals[self._key]?["Value"]!.string)!)
          {
             let f = CGFloat(n)
 
