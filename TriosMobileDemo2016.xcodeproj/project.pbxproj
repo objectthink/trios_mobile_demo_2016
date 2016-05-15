@@ -7,39 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */; };
-		012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */; };
-		012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */; };
-		017535871CDF75900094D100 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0175357E1CDF75900094D100 /* BEMAverageLine.m */; };
-		017535881CDF75900094D100 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535801CDF75900094D100 /* BEMCircle.m */; };
-		017535891CDF75900094D100 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535821CDF75900094D100 /* BEMLine.m */; };
-		0175358A1CDF75900094D100 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535841CDF75900094D100 /* BEMPermanentPopupView.m */; };
-		0175358B1CDF75900094D100 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */; };
-		0175358D1CDF767D0094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175358C1CDF767D0094D100 /* PlotViewController.swift */; };
-		017535921CE742C40094D100 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0175358F1CE742C40094D100 /* GCDAsyncSocket.m */; };
-		017535931CE742C40094D100 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */; };
-		01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */; };
-		01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A01CDADC6800AAA5D8 /* JSON.swift */; };
-		01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */; };
-		01F021AB1CDADC6800AAA5D8 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A21CDADC6800AAA5D8 /* JSONEncodable.swift */; };
-		01F021AC1CDADC6800AAA5D8 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A31CDADC6800AAA5D8 /* JSONExtensions.swift */; };
-		01F021AD1CDADC6800AAA5D8 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A41CDADC6800AAA5D8 /* ysocket.swift */; };
-		01F021AE1CDADC6800AAA5D8 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A51CDADC6800AAA5D8 /* ytcpsocket.c */; };
-		01F021AF1CDADC6800AAA5D8 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A61CDADC6800AAA5D8 /* ytcpsocket.swift */; };
-		01F021B01CDADC6800AAA5D8 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A71CDADC6800AAA5D8 /* yudpsocket.c */; };
-		01F021B11CDADC6800AAA5D8 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021A81CDADC6800AAA5D8 /* yudpsocket.swift */; };
-		01F021B31CDAE01000AAA5D8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021B21CDAE01000AAA5D8 /* TabBarController.swift */; };
-		01F021B71CDE1F9D00AAA5D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F021B61CDE1F9D00AAA5D8 /* MainViewController.swift */; };
-		1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */; };
-		1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429139219DA9F4D0025188A /* MyNavigationController.swift */; };
-		14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */; };
-		14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */; };
-		5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C132588198E2A9A00CA49BE /* AppDelegate.swift */; };
-		5C132590198E2A9A00CA49BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C13258F198E2A9A00CA49BE /* Images.xcassets */; };
+		017535C41CE88E540094D100 /* TriosComms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C21CE88E540094D100 /* TriosComms.swift */; };
+		017535C51CE88E540094D100 /* TriosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C31CE88E540094D100 /* TriosDelegate.swift */; };
+		017535CC1CE88E940094D100 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C61CE88E940094D100 /* PlotViewController.swift */; };
+		017535CD1CE88E940094D100 /* SignalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C71CE88E940094D100 /* SignalsTableViewController.swift */; };
+		017535CE1CE88E940094D100 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C81CE88E940094D100 /* StatusViewController.swift */; };
+		017535CF1CE88E940094D100 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535C91CE88E940094D100 /* MyMenuTableViewController.swift */; };
+		017535D01CE88E940094D100 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535CA1CE88E940094D100 /* MainViewController.swift */; };
+		017535D11CE88E940094D100 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535CB1CE88E940094D100 /* MyNavigationController.swift */; };
+		017535D71CE88EC60094D100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017535D21CE88EC60094D100 /* Images.xcassets */; };
+		017535D81CE88EC60094D100 /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017535D31CE88EC60094D100 /* LaunchView.xib */; };
+		017535D91CE88EC60094D100 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017535D41CE88EC60094D100 /* Info.plist */; };
+		017535DA1CE88EC60094D100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535D51CE88EC60094D100 /* AppDelegate.swift */; };
+		017535DB1CE88EC60094D100 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 017535D61CE88EC60094D100 /* image.png */; };
+		017535DD1CE88F180094D100 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535DC1CE88F180094D100 /* TabBarController.swift */; };
+		017535F81CE88F680094D100 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */; };
+		017535F91CE88F680094D100 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E01CE88F680094D100 /* ysocket.swift */; };
+		017535FA1CE88F680094D100 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E11CE88F680094D100 /* ENSideMenu.swift */; };
+		017535FB1CE88F680094D100 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 017535E21CE88F680094D100 /* ytcpsocket.c */; };
+		017535FC1CE88F680094D100 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E31CE88F680094D100 /* ytcpsocket.swift */; };
+		017535FD1CE88F680094D100 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 017535E41CE88F680094D100 /* yudpsocket.c */; };
+		017535FE1CE88F680094D100 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E51CE88F680094D100 /* yudpsocket.swift */; };
+		017535FF1CE88F680094D100 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E61CE88F680094D100 /* JSON.swift */; };
+		017536001CE88F680094D100 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E71CE88F680094D100 /* JSONDecodable.swift */; };
+		017536011CE88F680094D100 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E81CE88F680094D100 /* JSONEncodable.swift */; };
+		017536021CE88F680094D100 /* JSONExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017535E91CE88F680094D100 /* JSONExtensions.swift */; };
+		017536031CE88F680094D100 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535EB1CE88F680094D100 /* BEMAverageLine.m */; };
+		017536041CE88F680094D100 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535ED1CE88F680094D100 /* BEMCircle.m */; };
+		017536051CE88F680094D100 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535EF1CE88F680094D100 /* BEMLine.m */; };
+		017536061CE88F680094D100 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F11CE88F680094D100 /* BEMPermanentPopupView.m */; };
+		017536071CE88F680094D100 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */; };
+		017536081CE88F680094D100 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */; };
+		017536091CE88F680094D100 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 017535F61CE88F680094D100 /* GCDAsyncSocket.m */; };
+		0175360C1CE890F80094D100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175360A1CE890F80094D100 /* Main.storyboard */; };
 		5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */; };
-		5C1325AA198E2AB300CA49BE /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1325A7198E2AB300CA49BE /* image.png */; };
-		5C7D78C21BAEEEC2002BD24B /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D78C11BAEEEC2002BD24B /* LaunchView.xib */; };
-		9E4766FC19DDBCE900FCEACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C13258C198E2A9A00CA49BE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,51 +54,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosComms.swift; sourceTree = "<group>"; };
-		012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriosDelegate.swift; sourceTree = "<group>"; };
-		012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsTableViewController.swift; sourceTree = "<group>"; };
-		0175357D1CDF75900094D100 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
-		0175357E1CDF75900094D100 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
-		0175357F1CDF75900094D100 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
-		017535801CDF75900094D100 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
-		017535811CDF75900094D100 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
-		017535821CDF75900094D100 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
-		017535831CDF75900094D100 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
-		017535841CDF75900094D100 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
-		017535851CDF75900094D100 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
-		017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
-		0175358C1CDF767D0094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
-		0175358E1CE742C40094D100 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		0175358F1CE742C40094D100 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		017535901CE742C40094D100 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSideMenu-Bridging-Header.h"; sourceTree = "<group>"; };
-		01F021A01CDADC6800AAA5D8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
-		01F021A21CDADC6800AAA5D8 /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodable.swift; sourceTree = "<group>"; };
-		01F021A31CDADC6800AAA5D8 /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONExtensions.swift; sourceTree = "<group>"; };
-		01F021A41CDADC6800AAA5D8 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
-		01F021A51CDADC6800AAA5D8 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
-		01F021A61CDADC6800AAA5D8 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
-		01F021A71CDADC6800AAA5D8 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
-		01F021A81CDADC6800AAA5D8 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
-		01F021B21CDAE01000AAA5D8 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		01F021B61CDE1F9D00AAA5D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
-		1429139219DA9F4D0025188A /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
-		14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
-		14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		017535C21CE88E540094D100 /* TriosComms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosComms.swift; path = TriosMobileDemo2016/TriosComms.swift; sourceTree = SOURCE_ROOT; };
+		017535C31CE88E540094D100 /* TriosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriosDelegate.swift; path = TriosMobileDemo2016/TriosDelegate.swift; sourceTree = SOURCE_ROOT; };
+		017535C61CE88E940094D100 /* PlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewController.swift; path = TriosMobileDemo2016/PlotViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C71CE88E940094D100 /* SignalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalsTableViewController.swift; path = TriosMobileDemo2016/SignalsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C81CE88E940094D100 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = TriosMobileDemo2016/StatusViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535C91CE88E940094D100 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = TriosMobileDemo2016/MyMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535CA1CE88E940094D100 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = TriosMobileDemo2016/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		017535CB1CE88E940094D100 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = TriosMobileDemo2016/MyNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		017535D21CE88EC60094D100 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TriosMobileDemo2016/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		017535D31CE88EC60094D100 /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchView.xib; path = TriosMobileDemo2016/LaunchView.xib; sourceTree = SOURCE_ROOT; };
+		017535D41CE88EC60094D100 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TriosMobileDemo2016/Info.plist; sourceTree = SOURCE_ROOT; };
+		017535D51CE88EC60094D100 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TriosMobileDemo2016/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		017535D61CE88EC60094D100 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = TriosMobileDemo2016/image.png; sourceTree = SOURCE_ROOT; };
+		017535DC1CE88F180094D100 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = TriosMobileDemo2016/TabBarController.swift; sourceTree = SOURCE_ROOT; };
+		017535DE1CE88F680094D100 /* TriosMobileDemo2016-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TriosMobileDemo2016-Bridging-Header.h"; path = "/Users/seshelman/Dev/TriosMobileDemo2016/Source/../Library/TriosMobileDemo2016-Bridging-Header.h"; sourceTree = "<absolute>"; };
+		017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = /Users/seshelman/Dev/TriosMobileDemo2016/Library/ENSideMenuNavigationController.swift; sourceTree = "<absolute>"; };
+		017535E01CE88F680094D100 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = ../Library/ysocket.swift; sourceTree = "<group>"; };
+		017535E11CE88F680094D100 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = ../Library/ENSideMenu.swift; sourceTree = "<group>"; };
+		017535E21CE88F680094D100 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = ../Library/ytcpsocket.c; sourceTree = "<group>"; };
+		017535E31CE88F680094D100 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ytcpsocket.swift; path = ../Library/ytcpsocket.swift; sourceTree = "<group>"; };
+		017535E41CE88F680094D100 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = ../Library/yudpsocket.c; sourceTree = "<group>"; };
+		017535E51CE88F680094D100 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = yudpsocket.swift; path = ../Library/yudpsocket.swift; sourceTree = "<group>"; };
+		017535E61CE88F680094D100 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = ../Library/JSON.swift; sourceTree = "<group>"; };
+		017535E71CE88F680094D100 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = ../Library/JSONDecodable.swift; sourceTree = "<group>"; };
+		017535E81CE88F680094D100 /* JSONEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodable.swift; path = ../Library/JSONEncodable.swift; sourceTree = "<group>"; };
+		017535E91CE88F680094D100 /* JSONExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONExtensions.swift; path = ../Library/JSONExtensions.swift; sourceTree = "<group>"; };
+		017535EA1CE88F680094D100 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMAverageLine.h; path = ../Library/BEMAverageLine.h; sourceTree = "<group>"; };
+		017535EB1CE88F680094D100 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMAverageLine.m; path = ../Library/BEMAverageLine.m; sourceTree = "<group>"; };
+		017535EC1CE88F680094D100 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCircle.h; path = ../Library/BEMCircle.h; sourceTree = "<group>"; };
+		017535ED1CE88F680094D100 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCircle.m; path = ../Library/BEMCircle.m; sourceTree = "<group>"; };
+		017535EE1CE88F680094D100 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMLine.h; path = ../Library/BEMLine.h; sourceTree = "<group>"; };
+		017535EF1CE88F680094D100 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMLine.m; path = ../Library/BEMLine.m; sourceTree = "<group>"; };
+		017535F01CE88F680094D100 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMPermanentPopupView.h; path = ../Library/BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		017535F11CE88F680094D100 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMPermanentPopupView.m; path = ../Library/BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		017535F21CE88F680094D100 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMSimpleLineGraphView.h; path = ../Library/BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMSimpleLineGraphView.m; path = ../Library/BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ../Library/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		017535F51CE88F680094D100 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = ../Library/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		017535F61CE88F680094D100 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = ../Library/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		017535F71CE88F680094D100 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ../Library/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		0175360B1CE890F80094D100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C132583198E2A9A00CA49BE /* TriosMobileDemo2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriosMobileDemo2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C132587198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C132588198E2A9A00CA49BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C13258D198E2A9A00CA49BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5C13258F198E2A9A00CA49BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5C132595198E2A9A00CA49BE /* TriosMobileDemo2016.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriosMobileDemo2016.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C13259A198E2A9A00CA49BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuTests.swift; sourceTree = "<group>"; };
-		5C1325A7198E2AB300CA49BE /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		5C7D78C11BAEEEC2002BD24B /* LaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,32 +122,19 @@
 		012E82DD1CDE2B88008BD3C2 /* Communications */ = {
 			isa = PBXGroup;
 			children = (
-				012E82DE1CDE2C0D008BD3C2 /* TriosComms.swift */,
-				012E82E01CDE97FA008BD3C2 /* TriosDelegate.swift */,
+				017535C21CE88E540094D100 /* TriosComms.swift */,
+				017535C31CE88E540094D100 /* TriosDelegate.swift */,
 			);
 			name = Communications;
-			sourceTree = "<group>";
-		};
-		0175357C1CDF756F0094D100 /* BEMSimpleLineGraph */ = {
-			isa = PBXGroup;
-			children = (
-				0175357D1CDF75900094D100 /* BEMAverageLine.h */,
-				0175357E1CDF75900094D100 /* BEMAverageLine.m */,
-				0175357F1CDF75900094D100 /* BEMCircle.h */,
-				017535801CDF75900094D100 /* BEMCircle.m */,
-				017535811CDF75900094D100 /* BEMLine.h */,
-				017535821CDF75900094D100 /* BEMLine.m */,
-				017535831CDF75900094D100 /* BEMPermanentPopupView.h */,
-				017535841CDF75900094D100 /* BEMPermanentPopupView.m */,
-				017535851CDF75900094D100 /* BEMSimpleLineGraphView.h */,
-				017535861CDF75900094D100 /* BEMSimpleLineGraphView.m */,
-			);
-			name = BEMSimpleLineGraph;
 			sourceTree = "<group>";
 		};
 		1429137B19D979A50025188A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				017535D21CE88EC60094D100 /* Images.xcassets */,
+				017535D31CE88EC60094D100 /* LaunchView.xib */,
+				017535D51CE88EC60094D100 /* AppDelegate.swift */,
+				017535D61CE88EC60094D100 /* image.png */,
 				012E82DD1CDE2B88008BD3C2 /* Communications */,
 				1429139419DAA9C00025188A /* Controllers */,
 			);
@@ -156,13 +144,13 @@
 		1429139419DAA9C00025188A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1429139219DA9F4D0025188A /* MyNavigationController.swift */,
-				1429137C19D97A4F0025188A /* MyMenuTableViewController.swift */,
-				01F0219D1CDADB1E00AAA5D8 /* StatusViewController.swift */,
-				01F021B21CDAE01000AAA5D8 /* TabBarController.swift */,
-				01F021B61CDE1F9D00AAA5D8 /* MainViewController.swift */,
-				012E82E41CDEB498008BD3C2 /* SignalsTableViewController.swift */,
-				0175358C1CDF767D0094D100 /* PlotViewController.swift */,
+				017535DC1CE88F180094D100 /* TabBarController.swift */,
+				017535C61CE88E940094D100 /* PlotViewController.swift */,
+				017535C71CE88E940094D100 /* SignalsTableViewController.swift */,
+				017535C81CE88E940094D100 /* StatusViewController.swift */,
+				017535C91CE88E940094D100 /* MyMenuTableViewController.swift */,
+				017535CA1CE88E940094D100 /* MainViewController.swift */,
+				017535CB1CE88E940094D100 /* MyNavigationController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -170,23 +158,32 @@
 		14EAB63A19DD4E95006A90FC /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				0175357C1CDF756F0094D100 /* BEMSimpleLineGraph */,
-				01F021A01CDADC6800AAA5D8 /* JSON.swift */,
-				01F021A11CDADC6800AAA5D8 /* JSONDecodable.swift */,
-				01F021A21CDADC6800AAA5D8 /* JSONEncodable.swift */,
-				01F021A31CDADC6800AAA5D8 /* JSONExtensions.swift */,
-				01F021A41CDADC6800AAA5D8 /* ysocket.swift */,
-				01F021A51CDADC6800AAA5D8 /* ytcpsocket.c */,
-				01F021A61CDADC6800AAA5D8 /* ytcpsocket.swift */,
-				01F021A71CDADC6800AAA5D8 /* yudpsocket.c */,
-				01F021A81CDADC6800AAA5D8 /* yudpsocket.swift */,
-				14EAB63B19DD4E95006A90FC /* ENSideMenu.swift */,
-				14EAB63C19DD4E95006A90FC /* ENSideMenuNavigationController.swift */,
-				01F0219F1CDADC6800AAA5D8 /* SwiftSideMenu-Bridging-Header.h */,
-				0175358E1CE742C40094D100 /* GCDAsyncSocket.h */,
-				0175358F1CE742C40094D100 /* GCDAsyncSocket.m */,
-				017535901CE742C40094D100 /* GCDAsyncUdpSocket.h */,
-				017535911CE742C40094D100 /* GCDAsyncUdpSocket.m */,
+				017535DE1CE88F680094D100 /* TriosMobileDemo2016-Bridging-Header.h */,
+				017535DF1CE88F680094D100 /* ENSideMenuNavigationController.swift */,
+				017535E01CE88F680094D100 /* ysocket.swift */,
+				017535E11CE88F680094D100 /* ENSideMenu.swift */,
+				017535E21CE88F680094D100 /* ytcpsocket.c */,
+				017535E31CE88F680094D100 /* ytcpsocket.swift */,
+				017535E41CE88F680094D100 /* yudpsocket.c */,
+				017535E51CE88F680094D100 /* yudpsocket.swift */,
+				017535E61CE88F680094D100 /* JSON.swift */,
+				017535E71CE88F680094D100 /* JSONDecodable.swift */,
+				017535E81CE88F680094D100 /* JSONEncodable.swift */,
+				017535E91CE88F680094D100 /* JSONExtensions.swift */,
+				017535EA1CE88F680094D100 /* BEMAverageLine.h */,
+				017535EB1CE88F680094D100 /* BEMAverageLine.m */,
+				017535EC1CE88F680094D100 /* BEMCircle.h */,
+				017535ED1CE88F680094D100 /* BEMCircle.m */,
+				017535EE1CE88F680094D100 /* BEMLine.h */,
+				017535EF1CE88F680094D100 /* BEMLine.m */,
+				017535F01CE88F680094D100 /* BEMPermanentPopupView.h */,
+				017535F11CE88F680094D100 /* BEMPermanentPopupView.m */,
+				017535F21CE88F680094D100 /* BEMSimpleLineGraphView.h */,
+				017535F31CE88F680094D100 /* BEMSimpleLineGraphView.m */,
+				017535F41CE88F680094D100 /* GCDAsyncUdpSocket.m */,
+				017535F51CE88F680094D100 /* GCDAsyncSocket.h */,
+				017535F61CE88F680094D100 /* GCDAsyncSocket.m */,
+				017535F71CE88F680094D100 /* GCDAsyncUdpSocket.h */,
 			);
 			name = Library;
 			path = ../../Library;
@@ -213,13 +210,9 @@
 		5C132585198E2A9A00CA49BE /* TriosMobileDemo2016 */ = {
 			isa = PBXGroup;
 			children = (
+				0175360A1CE890F80094D100 /* Main.storyboard */,
 				14EAB63A19DD4E95006A90FC /* Library */,
 				1429137B19D979A50025188A /* Source */,
-				5C1325A7198E2AB300CA49BE /* image.png */,
-				5C132588198E2A9A00CA49BE /* AppDelegate.swift */,
-				5C13258C198E2A9A00CA49BE /* Main.storyboard */,
-				5C7D78C11BAEEEC2002BD24B /* LaunchView.xib */,
-				5C13258F198E2A9A00CA49BE /* Images.xcassets */,
 				5C132586198E2A9A00CA49BE /* Supporting Files */,
 			);
 			name = TriosMobileDemo2016;
@@ -229,7 +222,7 @@
 		5C132586198E2A9A00CA49BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C132587198E2A9A00CA49BE /* Info.plist */,
+				017535D41CE88EC60094D100 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -335,10 +328,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4766FC19DDBCE900FCEACC /* Main.storyboard in Resources */,
-				5C7D78C21BAEEEC2002BD24B /* LaunchView.xib in Resources */,
-				5C132590198E2A9A00CA49BE /* Images.xcassets in Resources */,
-				5C1325AA198E2AB300CA49BE /* image.png in Resources */,
+				017535D91CE88EC60094D100 /* Info.plist in Resources */,
+				0175360C1CE890F80094D100 /* Main.storyboard in Resources */,
+				017535D81CE88EC60094D100 /* LaunchView.xib in Resources */,
+				017535D71CE88EC60094D100 /* Images.xcassets in Resources */,
+				017535DB1CE88EC60094D100 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,34 +350,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F021AD1CDADC6800AAA5D8 /* ysocket.swift in Sources */,
-				017535871CDF75900094D100 /* BEMAverageLine.m in Sources */,
-				012E82DF1CDE2C0D008BD3C2 /* TriosComms.swift in Sources */,
-				01F0219E1CDADB1E00AAA5D8 /* StatusViewController.swift in Sources */,
-				017535931CE742C40094D100 /* GCDAsyncUdpSocket.m in Sources */,
-				017535881CDF75900094D100 /* BEMCircle.m in Sources */,
-				01F021AC1CDADC6800AAA5D8 /* JSONExtensions.swift in Sources */,
-				017535921CE742C40094D100 /* GCDAsyncSocket.m in Sources */,
-				01F021B31CDAE01000AAA5D8 /* TabBarController.swift in Sources */,
-				01F021AA1CDADC6800AAA5D8 /* JSONDecodable.swift in Sources */,
-				14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */,
-				01F021AE1CDADC6800AAA5D8 /* ytcpsocket.c in Sources */,
-				01F021B71CDE1F9D00AAA5D8 /* MainViewController.swift in Sources */,
-				017535891CDF75900094D100 /* BEMLine.m in Sources */,
-				01F021A91CDADC6800AAA5D8 /* JSON.swift in Sources */,
-				0175358D1CDF767D0094D100 /* PlotViewController.swift in Sources */,
-				012E82E51CDEB498008BD3C2 /* SignalsTableViewController.swift in Sources */,
-				01F021B01CDADC6800AAA5D8 /* yudpsocket.c in Sources */,
-				0175358A1CDF75900094D100 /* BEMPermanentPopupView.m in Sources */,
-				1429137D19D97A4F0025188A /* MyMenuTableViewController.swift in Sources */,
-				01F021AF1CDADC6800AAA5D8 /* ytcpsocket.swift in Sources */,
-				14EAB63D19DD4E95006A90FC /* ENSideMenu.swift in Sources */,
-				01F021B11CDADC6800AAA5D8 /* yudpsocket.swift in Sources */,
-				012E82E11CDE97FA008BD3C2 /* TriosDelegate.swift in Sources */,
-				1429139319DA9F4D0025188A /* MyNavigationController.swift in Sources */,
-				0175358B1CDF75900094D100 /* BEMSimpleLineGraphView.m in Sources */,
-				5C132589198E2A9A00CA49BE /* AppDelegate.swift in Sources */,
-				01F021AB1CDADC6800AAA5D8 /* JSONEncodable.swift in Sources */,
+				017535D01CE88E940094D100 /* MainViewController.swift in Sources */,
+				017536081CE88F680094D100 /* GCDAsyncUdpSocket.m in Sources */,
+				017536011CE88F680094D100 /* JSONEncodable.swift in Sources */,
+				017535C41CE88E540094D100 /* TriosComms.swift in Sources */,
+				017536061CE88F680094D100 /* BEMPermanentPopupView.m in Sources */,
+				017535CF1CE88E940094D100 /* MyMenuTableViewController.swift in Sources */,
+				017535FF1CE88F680094D100 /* JSON.swift in Sources */,
+				017536071CE88F680094D100 /* BEMSimpleLineGraphView.m in Sources */,
+				017535FA1CE88F680094D100 /* ENSideMenu.swift in Sources */,
+				017535DD1CE88F180094D100 /* TabBarController.swift in Sources */,
+				017535CC1CE88E940094D100 /* PlotViewController.swift in Sources */,
+				017536051CE88F680094D100 /* BEMLine.m in Sources */,
+				017536091CE88F680094D100 /* GCDAsyncSocket.m in Sources */,
+				017535FB1CE88F680094D100 /* ytcpsocket.c in Sources */,
+				017536001CE88F680094D100 /* JSONDecodable.swift in Sources */,
+				017535C51CE88E540094D100 /* TriosDelegate.swift in Sources */,
+				017535FD1CE88F680094D100 /* yudpsocket.c in Sources */,
+				017536031CE88F680094D100 /* BEMAverageLine.m in Sources */,
+				017535F91CE88F680094D100 /* ysocket.swift in Sources */,
+				017535FC1CE88F680094D100 /* ytcpsocket.swift in Sources */,
+				017535CE1CE88E940094D100 /* StatusViewController.swift in Sources */,
+				017535FE1CE88F680094D100 /* yudpsocket.swift in Sources */,
+				017535DA1CE88EC60094D100 /* AppDelegate.swift in Sources */,
+				017536041CE88F680094D100 /* BEMCircle.m in Sources */,
+				017535D11CE88E940094D100 /* MyNavigationController.swift in Sources */,
+				017535F81CE88F680094D100 /* ENSideMenuNavigationController.swift in Sources */,
+				017536021CE88F680094D100 /* JSONExtensions.swift in Sources */,
+				017535CD1CE88E940094D100 /* SignalsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +400,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C13258C198E2A9A00CA49BE /* Main.storyboard */ = {
+		0175360A1CE890F80094D100 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C13258D198E2A9A00CA49BE /* Base */,
+				0175360B1CE890F80094D100 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -503,12 +497,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SwiftSideMenu/Info.plist;
+				INFOPLIST_FILE = TriosMobileDemo2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectthink.triosmobiledemo2016;
 				PRODUCT_NAME = TriosMobileDemo2016;
-				SWIFT_OBJC_BRIDGING_HEADER = "../Library/SwiftSideMenu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Library/TriosMobileDemo2016-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -519,12 +513,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SwiftSideMenu/Info.plist;
+				INFOPLIST_FILE = TriosMobileDemo2016/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectthink.triosmobiledemo2016;
 				PRODUCT_NAME = TriosMobileDemo2016;
-				SWIFT_OBJC_BRIDGING_HEADER = "../Library/SwiftSideMenu-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Library/TriosMobileDemo2016-Bridging-Header.h";
 			};
 			name = Release;
 		};

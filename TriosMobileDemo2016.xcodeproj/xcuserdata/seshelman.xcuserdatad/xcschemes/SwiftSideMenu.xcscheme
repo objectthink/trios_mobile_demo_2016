@@ -96,6 +96,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "TriosMobileDemo2016"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
